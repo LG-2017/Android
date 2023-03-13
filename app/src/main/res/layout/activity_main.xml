@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numberTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Plusbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbutton"
+        android:text="Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/Minusbutton"
+        app:layout_constraintEnd_toStartOf="@+id/Minusbutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Minusbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minus"
+        android:layout_marginTop="23dp"
+
+        android:background="@drawable/editbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberTextview" />
+
+    <Button
+        android:id="@+id/Resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbutton"
+        android:text="Reset"
+
+        app:layout_constraintBottom_toBottomOf="@+id/Minusbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Minusbutton" />
+
+    <Button
+        android:id="@+id/nextactivitybutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbutton"
+        android:text="About Us"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/Resetbutton"
+        app:layout_constraintStart_toStartOf="@+id/Plusbutton"
+        app:layout_constraintTop_toBottomOf="@+id/Minusbutton" />
+
+    <Button
+        android:id="@+id/exitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editbutton"
+        android:text="Exit"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/nextactivitybutton"
+
+        app:layout_constraintStart_toStartOf="@+id/nextactivitybutton"
+        app:layout_constraintTop_toBottomOf="@+id/nextactivitybutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
